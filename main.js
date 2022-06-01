@@ -1,6 +1,5 @@
 
-canvas = document.getElementById('myCanvas');
-ctx = canvas.getContext("2d");
+var canvas = new fabric.Canvas('myCanvas');
 // Crea la variable del canvas
  block_y=1;
  block_x=1;
@@ -36,33 +35,33 @@ console.log(keyPressed);
 
 	if(keyPressed == '82') // añade los códigos de las teclas
 	{
-		 block_x = 50;
+		 block_x = 1;
 		 new_image('rr1.png');
 		 console.log("r");
 	}
 	if(keyPressed == '71')
 	{
-		block_x = 200;
+		block_x = 100;
 		new_image('gr.png');
 		console.log("g");
 	}
 	
 	if(keyPressed == '89')
 	{
-		block_x =350;
+		block_x =200;
 		new_image('yr.png');
 		console.log("y");
 	}
 	if(keyPressed == '80')
 	{
-		block_x = 600;
-		new_image('pr1.png');
+		block_x = 350;
+		new_image('pr.png');
 		console.log("p");
 	}
 	if(keyPressed == '66')
 	{
-		block_x = 700;
-		new_image('br1.png');
+		block_x = 500;
+		new_image('br.png');
 		console.log("b");
 	}
 	
